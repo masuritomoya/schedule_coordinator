@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: schedule_coordinator_development
+
+test:
+  <<: *default
+  database: schedule_coordinator_test
+
+production:
+  <<: *default
+  database: schedule_coordinator_production
+  username: schedule_coordinator
+  password: <%= ENV['SCHEDULE_COORDINATOR_DATABASE_PASSWORD'] %>
