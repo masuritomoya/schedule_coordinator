@@ -5,6 +5,7 @@ gem 'mysql2', '~> 0.3.20'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'google-api-client'
 
 group :assets do
   gem 'sass-rails', '~> 5.0'
