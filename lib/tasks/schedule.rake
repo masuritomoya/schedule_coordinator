@@ -33,5 +33,14 @@ namespace :schedule do
 	events.each do |event|
 	  puts event.summary
 	end
+
+	Event.all.each do |event|
+	  event.groups.each do |group|
+	    group.members.each do |member|
+	      puts member.email
+	    end
+	  end
+	end
+
   end
 end
