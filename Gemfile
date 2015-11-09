@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'google-api-client'
+gem 'business_time'
 
 group :assets do
   gem 'sass-rails', '~> 5.0'
